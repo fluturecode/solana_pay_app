@@ -1,3 +1,4 @@
+import { useWallet } from "@solana/wallet-adapter-react";
 import { WalletMultiButton } from "@solana/wallet-adapter-react-ui";
 
 // Constants
@@ -17,8 +18,29 @@ const App = () => {
     </div>
   )
   return (
-    <div >
+<div className="App">
+      <div className="container">
+        <header className="header-container">
+          <p className="header"> 😳 Buildspace Emoji Store 😈</p>
+          <p className="sub-text">The only emoji store that accepts shitcoins</p>
+        </header>
 
+        <main>
+          {/* We only render the connect button if public key doesn't exist */}
+          {publicKey ? 'Connected!' : renderNotConnectedContainer()}
+
+        </main>
+
+        <div className="footer-container">
+          <img alt="Twitter Logo" className="twitter-logo" src="twitter-logo.svg" />
+          <a
+            className="footer-text"
+            href={TWITTER_LINK}
+            target="_blank"
+            rel="noreferrer"
+          >{`built on @${TWITTER_HANDLE}`}</a>
+        </div>
+      </div>
     </div>
   );
 };
