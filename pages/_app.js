@@ -5,7 +5,7 @@ import { WalletAdapterNetwork } from "@solana/wallet-adapter-base";
 import { clusterApiUrl } from "@solana/web3.js";
 import { GlowWalletAdapter, PhantomWalletAdapter, SlopeWalletAdapter, SolflareWalletAdapter, TorusWalletAdapter } from "@solana/wallet-adapter-wallets";
 import { ConnectionProvider } from "@solana/wallet-adapter-react";
-import { WalletModal, WalletModalProvider } from "@solana/wallet-adapter-react-ui";
+import { WalletModalProvider } from "@solana/wallet-adapter-react-ui";
 
 const App = ({ Component, pageProps }) => {
   const network = WalletAdapterNetwork.Devnet;
