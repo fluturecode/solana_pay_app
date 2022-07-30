@@ -1,5 +1,19 @@
-const useIPFS = (hash, filename) => {
-return `https://gateway.ipfscdn.io/ipfs/${hash}?filename=${filename}`
+
+const IPFSDownload = ({hash, filename}) => {
+
+const file = useIPFS(hash, filename);
+
+return (
+    <div>
+      {file ? (
+        <div className='download-component'>
+          <a className='download-button' href={file} download={filename}>Download</a>
+        </div>
+      ) : (
+        <p>Downloading file...</p>
+      )}
+    </div>
+  )
 };
 
-export default useIPFS;
+export default IPFSDownload;
