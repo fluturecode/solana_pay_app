@@ -24,7 +24,7 @@ const App = () => {
 
   const renderNotConnectedContainer = () => (
     <div>
-      <img src='https://media.giphy.com/media/eSwGh3YK54JKU/giphy.gif' alt='emoji'/>
+      <img src='https://andscape.com/wp-content/uploads/2017/02/ce99ca59.jpg?w=700' alt='album cover'/>
 
       <div className='button-container'>
         <WalletMultiButton className='cta-button connect-wallet-button'/>
@@ -44,7 +44,7 @@ const App = () => {
     <div className="App">
       <div className="container">
         <header className="header-container">
-          <p className="header"> 😳 Buildspace Emoji Store 😈</p>
+          <p className="header"> Fluture's Vinyl Shop</p>
           <p className="sub-text">We accept Solana Pay</p>
         </header>
 

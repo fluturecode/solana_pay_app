@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../styles/Product.module.css";
-import IPFSDownload from '../hooks/IpfsDownload';
+import IPFSDownload from '../hooks/useIPFS';
 
 export default function Product({ product }) {
   const { id, name, price, description, image_url } = product;
@@ -17,7 +17,7 @@ export default function Product({ product }) {
         </div>
         <div className={styles.product_action}>
           <div className={styles.product_price}>{price} USDC</div>
-          <IPFSDownload filename="emojis.zip" hash="https://cloudflare-ipfs.com/ipfs/Qmf16QwaKEbmAXnnZYGqaCpVNQFWEdVG8nAwwJfExs6E4S/beastie_album.jpeg" cta="Download emojis"/>
+          <IPFSDownload filename="emojis.zip" hash="Qmf16QwaKEbmAXnnZYGqaCpVNQFWEdVG8nAwwJfExs6E4S" cta="Download emojis"/>
         </div>
       </div>
     </div>
