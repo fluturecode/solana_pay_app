@@ -15,10 +15,10 @@ export default function Product({ product }) {
           <div className={styles.product_title}>{name}</div>
           <div className={styles.product_description}>{description}</div>
         </div>
-        <div className={styles.product_action}>
+        {/* <div className={styles.product_action}>
           <div className={styles.product_price}>{price} USDC</div>
           <IPFSDownload filename="emojis.zip" hash="Qmf16QwaKEbmAXnnZYGqaCpVNQFWEdVG8nAwwJfExs6E4S" cta="Download emojis"/>
-        </div>
+        </div> */}
       </div>
     </div>
   );

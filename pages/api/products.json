@@ -1,9 +1,9 @@
 [
   {
     "id": 1,
-    "name": "Vinyl Records",
+    "name": "80's Vinyl Collection",
     "price": "49.99",
-    "description": "Get this emoji pack for only $49.99! Includes 6 hot vinyls from the 80's!",
+    "description": "",
     "image_url": "https://cloudflare-ipfs.com/ipfs/Qmf16QwaKEbmAXnnZYGqaCpVNQFWEdVG8nAwwJfExs6E4S/beastie_album.jpeg",
     "filename": "Albums.zip",
     "hash": "Qmf16QwaKEbmAXnnZYGqaCpVNQFWEdVG8nAwwJfExs6E4S"
